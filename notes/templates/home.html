@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+<div class="notes">
+<!-- Draggable DIV -->
+{% if notes %}
+{% for note in notes %}
+<div class="card w-25 draggable">
+    <div id="divheader">&#128203;</div>
+    <div class="card-body">
+        <a href="#" class="delete_note" id="{{note.id}}">&#10008;</a>
+        <div class="card-title">
+            <input id="{{note.id}}" class="form-control" type="text" placeholder="Note Title" value="{{note.title}}">
+        </div>
+        <textarea id="{{note.id}}" class="card-text form-control" type="text" rows="9"> {{note.content}} </textarea>
+    </div>
+</div>
+
+{% endfor %}
+{% endif %}
+</div>
+
+{% load static %}
+<script src="{% static 'drag.js' %}"></script>
+{% load static %}
+<script src="{% static 'create_note.js' %}"></script>
+{% load static %}
+<script src="{% static 'update_note.js' %}"></script>
+{% load static %}
+<script src="{% static 'delete_note.js' %}"></script>
+{% load static %}
+<script src="{% static 'keyboard.js' %}"></script>
+
+
+{% endblock content %}

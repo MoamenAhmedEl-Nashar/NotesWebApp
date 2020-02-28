@@ -1,0 +1,103 @@
+
+  
+  form {
+    width:90%;
+    background-color:#1e2833;
+    padding:40px;
+    border-radius:4px;
+    color:#fff;
+    box-shadow:3px 3px 4px rgba(0,0,0,0.2);
+  }
+  
+   .illustration {
+    text-align:center;
+    padding:15px 0 20px;
+    font-size:100px;
+    color:#2980ef;
+  }
+  
+   form .form-control {
+    background:none;
+    border:none;
+    border-bottom:1px solid #434a52;
+    border-radius:0;
+    box-shadow:none;
+    outline:none;
+    color:inherit;
+  }
+  
+   form .btn-primary {
+    background:#214a80;
+    border:none;
+    border-radius:4px;
+    padding:11px;
+    box-shadow:none;
+    margin-top:26px;
+    text-shadow:none;
+    outline:none;
+  }
+  
+   form .btn-primary:hover,  form .btn-primary:active {
+    background:#214a80;
+    outline:none;
+  }
+  
+   form .forgot {
+    display:block;
+    text-align:center;
+    font-size:12px;
+    color:#6f7a85;
+    opacity:0.9;
+    text-decoration:none;
+  }
+  
+   form .forgot:hover,  form .forgot:active {
+    opacity:1;
+    text-decoration:none;
+  }
+  
+   form .btn-primary:active {
+    transform:translateY(1px);
+  }
+  
+  .btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.btn-circle {
+    width: 60px;
+    height: 60px;
+    padding: 6px 0px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.42857;
+}
+
+.draggable {
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    float: left;
+    margin: 2px;
+  }
+  
+  #divheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+  }
+
+  .delete_note {
+    float: right;
+    height: 5%;
+  }
